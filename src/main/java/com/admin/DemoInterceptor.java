@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * 拦截器类
  * Created by lyz on 2017-10-6.
  */
 public class DemoInterceptor extends HandlerInterceptorAdapter{

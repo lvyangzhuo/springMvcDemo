@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 /**
+ * web配置
  * Created by lyz on 2017-10-5.
  */
 public class WebInitializer implements WebApplicationInitializer{
@@ -20,5 +21,6 @@ public class WebInitializer implements WebApplicationInitializer{
         ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher",new DispatcherServlet(ctx));
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
+        servlet.setAsyncSupported(true);
     }
 }
